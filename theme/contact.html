@@ -10,27 +10,17 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Galaxy - Personal Blog Template</title>
-
-    <!-- mobile responsive meta -->
+    <title>Portfolio de Franco Ibarra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-    <!-- theme meta -->
     <meta name="theme-name" content="galaxy" />
-
-    <!-- ** Plugins Needed for the Project ** -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+<!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
-
-    <!-- Main Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
-
+    <link rel="icon" type="image/png" sizes="16x16"  href="../post/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <div class="preloader-wrapper">
@@ -44,6 +34,7 @@
     <section class="d-flex">
   
 
+
 <!-- start of sidenav -->
 <aside><div class="sidenav position-sticky d-flex flex-column justify-content-between">
     <a class="navbar-brand" href="index.html" class="logo">
@@ -53,7 +44,7 @@
 
     <div class="navbar navbar-dark my-4 p-0 font-primary">
         <ul class="navbar-nav w-100">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link text-white px-0 pt-0" href="index.html">Inicio</a>
             </li>
             <li class="nav-item ">
@@ -68,17 +59,17 @@
 
     <ul class="list-inline nml-2">
         <li class="list-inline-item">
-            <a href="https://wa.me/5491135936995" class="text-white text-red-onHover p-2">
+            <a href="https://wa.me/5491135936995" class="text-white text-primary-onHover p-2">
                 <span class="fab fa-whatsapp"></span>
             </a>
         </li>
         <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/franco-h-ibarra/" class="text-white text-red-onHover p-2">
+            <a href="https://www.linkedin.com/in/franco-h-ibarra/" class="text-white text-primary-onHover p-2">
                 <span class="fab fa-linkedin-in"></span>
             </a>
         </li>
         <li class="list-inline-item">
-            <a href="https://github.com/xdigifranx" class="text-white text-red-onHover p-2">
+            <a href="https://github.com/xdigifranx" class="text-white text-primary-onHover p-2">
                 <span class="fab fa-github"></span>
             </a>
         </li>
@@ -87,6 +78,7 @@
 </div></aside>
 <!-- end of sidenav -->
     <div class="main-content">
+
         <!-- start of mobile-nav -->
 <header class="mobile-nav pt-4">
     <div class="container">
@@ -108,66 +100,43 @@
 <!-- end of mobile-nav -->
 
         <div class="container py-4 my-5">
-            <div class="row">
-    <div class="col-lg-5 col-md-8">
-        <form class="search-form" action="#">
-            <div class="input-group">
-                <input type="search" class="form-control bg-transparent shadow-none rounded-0" placeholder="Search here">
-                <div class="input-group-append">
-                    <button class="btn" type="submit">
-                        <span class="fas fa-search"></span>
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
+            
             <div class="row">
                 <div class="col-md-10">
                     <div class="contact-form bg-dark">
-                        <h1 class="text-white add-letter-space mb-5">Lets Contact Us</h1>
-                        <form method="POST" class="needs-validation" novalidate>
+                        <h1 class="text-white add-letter-space mb-5">Contáctame</h1>
+                        <form action="https://formspree.io/f/mwkzjnbr" method="POST" class="needs-validation" novalidate>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group mb-5">
-                                        <label for="firstName" class="text-black-300">Your First Name</label>
-                                        <input type="text" id="firstName" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Robert Lee" required>
-                                        <p class="invalid-feedback">Your first-name is required!</p>
+                                        <label for="firstName" class="text-black-300">Nombre</label>
+                                        <input type="text" name="firstName" id="firstName" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Franco" required>
+                                        <p class="invalid-feedback">Su nombre es requerido!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group mb-5">
-                                        <label for="lastName" class="text-black-300">Your Last Name</label>
-                                        <input type="text" id="lastName" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Anderson" required>
-                                        <p class="invalid-feedback">Your last-name is required!</p>
+                                        <label for="lastName" class="text-black-300">Apellido</label>
+                                        <input type="text" name="lastName" id="lastName" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Ibarra" required>
+                                        <p class="invalid-feedback">Su apellido es requerido!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group mb-5">
-                                        <label for="email" class="text-black-300">E-Mail Address</label>
-                                        <input type="email" id="email" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="kevin.jones@mail.com" required>
-                                        <p class="invalid-feedback">Your email is required!</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group mb-5">
-                                        <label class="text-black-300">What Is This About?</label>
-                                        <select class="d-block w-100">
-                                            <option value="1">Personal Proposal</option>
-                                            <option value="2">Business Purpose</option>
-                                            <option value="3">Want to say hello</option>
-                                        </select>
+                                        <label for="email" class="text-black-300">E-Mail</label>
+                                        <input type="email" name="email" id="email" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="E-mail-falso_123@gmail.com" required>
+                                        <p class="invalid-feedback">Su E-mail es requerido!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group mb-5">
-                                        <label for="message" class="text-black-300">Your message</label>
-                                        <textarea name="message" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Lorem Ipsum is simply dummy text of the printing and..." required></textarea>
-                                        <p class="invalid-feedback">Message is required!</p>
+                                        <label for="message" class="text-black-300">Tu mensaje</label>
+                                        <textarea name="message" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Hola Franco me comunico..." required></textarea>
+                                        <p class="invalid-feedback">Tu mensaje es requerido!</p>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-sm btn-primary">Send Now <img src="images/arrow-right.png" alt=""></button>
+                                    <button type="submit" class="btn btn-sm btn-primary">Enviar <img src="images/arrow-right.png" alt="flecha"></button>
                                 </div>
                             </div>
                         </form>
@@ -176,57 +145,15 @@
             </div>
         </div>
 
-        <!-- start of footer -->
-<footer class="bg-dark">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="font-primary text-white mb-4">Inspirations</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">Privacy State</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                    <li><a href="#!">State</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="font-primary text-white mb-4">Templates</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">Privacy State</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                    <li><a href="#!">State</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="font-primary text-white mb-4">Resource</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">Privacy State</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                    <li><a href="#!">State</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="font-primary text-white mb-4">Company</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">Privacy State</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                    <li><a href="#!">State</a></li>
-                    <li><a href="#!">Privacy</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- end of footer -->
+        
     </div>
     </section>
     <!-- END main-wrapper -->
 
     <!-- All JS Files -->
     <script src="plugins/jQuery/jquery.min.js"></script>
-    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <!-- Main Script -->
     <script src="js/script.js"></script>

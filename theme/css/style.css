@@ -25,6 +25,19 @@ body {
   overflow-y: hidden;
 }
 
+.logo {
+  border-radius: 5rem;
+}
+
+.author {
+  width: 51%;
+  border-radius: 5rem;
+}
+
+.espacio {
+  margin: 10%;
+}
+
 body.loaded {
   overflow-y: scroll;
 }
@@ -58,17 +71,7 @@ body.loaded {
     width: 100%;
   }
 }
-.logo{
-  border-radius: 5rem;
-}
-.espacio{
-  margin: 5vw;
-}
-.author{
-  width: 25vw;
-  margin: 3vw;
-  border-radius: 5rem;
-}
+
 .btn {
   font-size: 15px;
   padding: 10px 25px;

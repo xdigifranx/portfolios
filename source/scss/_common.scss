@@ -8,6 +8,16 @@ body {
     line-height: 1.65;
 	overflow-y: hidden;
 }
+.logo{
+	border-radius: 5rem
+}
+.author{
+	width: 51%;
+	border-radius: 5rem;
+}
+.espacio{
+	margin: 10%;
+}
 body.loaded {
 	overflow-y: scroll;
 }

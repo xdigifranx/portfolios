@@ -1,9 +1,10 @@
 @@include('header.htm')
-@@include('sidenav.htm',{'home':'', 'about':'active', 'contact':''})
+@@include('sidenav.htm',{'home':'', 'about':'active', 'contact':'', 'pages':'', 'home2':'', 'category':'', 'postDetails':'', 'pnp':''})
     <div class="main-content">
         @@include('mobile-nav.htm')
         <div class="container py-4 my-5">
-            <div class="row">
+            @@include('search-form.htm')
+            <div class="row ">
                 <div class="col-md-9">
                     <img class="img-fluid author" src="images/author.jpg" alt="author">
                     <h1 class="text-white add-letter-space my-4">Hola, soy Franco Ibarra programador Front-end</h1>
@@ -17,28 +18,32 @@
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             </div>
                             <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/certificado-de-desarrollo-frontend.png" class="d-block w-100" alt="certificado front end">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/certificado-de-desarrollo-web.png" class="d-block w-100" alt="certificado de desarrollo web">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/certificado de javascrips.png" class="d-block w-100" alt="certificado de javascrips">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/certificado de react.png" class="d-block w-100" alt="certificado de react.js">
-                            </div>
+                                <div class="carousel-item active ">
+                                    <img src="images/certificado de desarrollo frontend.png" class="d-block w-100" alt="certificado front end">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/certificado de desarrollo web.png" class="d-block w-100" alt="certificado de desarrollo web">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/certificado de javascrips.png" class="d-block w-100" alt="certificado de javascrips">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/certificado de react.png" class="d-block w-100" alt="certificado de react.js">
+                                </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                             </button>
-                </div>
-            </div>
+                        </div>
         </div>
+    </div>
+
+        @@include('footer-block.htm')
     </div>
 
 @@include('footer.htm')
