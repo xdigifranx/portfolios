@@ -1,43 +1,44 @@
 @@include('header.htm')
-@@include('sidenav.htm',{'home':'', 'about':'active', 'contact':'', 'pages':'', 'home2':'', 'category':'', 'postDetails':'', 'pnp':''})
+@@include('sidenav.htm',{'home':'', 'about':'active', 'contact':''})
     <div class="main-content">
         @@include('mobile-nav.htm')
         <div class="container py-4 my-5">
-            @@include('search-form.htm')
             <div class="row">
                 <div class="col-md-9">
-                    <img class="img-fluid" src="images/author.png" alt="">
-                    <h1 class="text-white add-letter-space my-4">Hi,I’m Alexender Xanidiver Specilized In Blog Writing And Colecting</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus cum cursus nunc nec velit volutpat consequat. Vitae dui, massa viverra nam dui laoreet ipsum. Sagittis sed feugiat blandit adipiscing mauris. Facilisis dictum in tellus ac turpis. Pretium, facilisis turpis duis pulvinar blandit est. Dolor accumsan pellentesque ullamcorper volutpat urna arcu. Nisi nulla et mauris et, ultricies odio semper gravida. Justo, lorem leo ullamcorper leo ornare phasellus. Dolor tristique sem quam eget tempor aliquet sem amet, eget. Vitae id mattis consectetur gravida sit lorem donec. Phasellus enim sodales congue varius arcu et, pulvinar ultrices. Faucibus nulla massa erat ut. Egestas integer pharetra proin pellentesque tellus quis pulvinar mauris. Sed quisque pellentesque platea vel. Proin felis tellus nunc risus tortor, nibh. Vulputate mauris fermentum tincidunt diam sed. Vel interdum nisl, pellentesque ante consectetur. At praesent lorem placerat nibh nunc. Massa lectus id et amet quam venenatis, in mus. Arcu cras risus est porttitor tincidunt posuere feugiat. Sem velit ornare id duis Amet nullam eget mus diam nisl, vel. Sed at id quam bibendum lacus felis. Porta arcu, nunc ultricies</p>
-                    <h2 class="text-white add-letter-space my-5">I’m on a mission to change how software is made by peoples of republic</h2>
-                    <ul class="list-unstyled">
-                        <li class="bullet-list-item mb-4">
-                            <h3 class="text-white mb-3 add-letter-space">Building software shouldn't be so hard</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor erat.</p>
-                        </li>
-                        <li class="bullet-list-item mb-4">
-                            <h3 class="text-white mb-3 add-letter-space">You should get something working on day one</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor erat.</p>
-                        </li>
-                        <li class="bullet-list-item mb-4">
-                            <h3 class="text-white mb-3 add-letter-space">Don't reimplement the wheel</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor erat.</p>
-                        </li>
-                        <li class="bullet-list-item">
-                            <h3 class="text-white mb-3 add-letter-space">You should get  working on day one</h3>
-                            <ol class="pl-0">
-                                <li class="mb-2">Sll the Themefisher items are designed to be with the latest , We check all.</li>
-                                <li class="mb-2">Comments that threaten or harm the reputation of any person or organization</li>
-                                <li class="mb-2">Personal information including, but  limited to, email addresses, telephone numbers</li>
-                                <li>Any Update come in The technology  Customer will get automatic  Notification.</li>
-                            </ol>
-                        </li>
-                    </ul>
+                    <img class="img-fluid author" src="images/author.jpg" alt="author">
+                    <h1 class="text-white add-letter-space my-4">Hola, soy Franco Ibarra programador Front-end</h1>
+                    <p>Estudie programacion en CoderHause gracias a la beca que me dieron la <a href="https://fundacionempujar.org/"><span>Fundacion Empujar</span></a>,
+                    los cursos que realice fueron de desarrollo web, javascrips y react en estos cursos me hicieron hacer proyectos para poner a prueba todo lo que aprendi en las mismas.</p>
+                        <div id="carouselExampleIndicators" class="carousel slide espacio" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/certificado-de-desarrollo-frontend.png" class="d-block w-100" alt="certificado front end">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/certificado-de-desarrollo-web.png" class="d-block w-100" alt="certificado de desarrollo web">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/certificado de javascrips.png" class="d-block w-100" alt="certificado de javascrips">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/certificado de react.png" class="d-block w-100" alt="certificado de react.js">
+                            </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </button>
                 </div>
             </div>
         </div>
-
-        @@include('footer-block.htm')
     </div>
 
 @@include('footer.htm')
